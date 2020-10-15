@@ -5,9 +5,11 @@ Home: http://github.com/timkpaine/tornado-proxy-handlers
 
 Package license: Apache-2.0
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/tornado-proxy-handlers-feedstock/blob/master/LICENSE.txt)
 
 Summary: Tornado proxy handlers for HTTP requests and web sockets
+
+Development: https://github.com/timkpaine/tornado-proxy-handlers
 
 Tornado proxy handlers for HTTP requests and web sockets
 
