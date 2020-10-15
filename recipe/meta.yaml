@@ -1,13 +1,13 @@
 {% set name = "tornado-proxy-handlers" %}
-{% set version = "0.0.3" %}
+{% set version = "0.0.5" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d0858baa8183df96de186a07c83d9c702a829f79c44bdc38accff764eda1a2af
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/tornado_proxy_handlers-{{ version }}.tar.gz
+  sha256: 8250177dbc7567fa2d3cfd22d0a7de71e34cceb8e56c7b7d7c2e5f92ffb5c60a  
 
 build:
   number: 0
