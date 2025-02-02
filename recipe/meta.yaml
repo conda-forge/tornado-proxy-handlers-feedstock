@@ -6,23 +6,26 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/tornado_proxy_handlers-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/tornado_proxy_handlers-{{ version }}.tar.gz
   sha256: c67cce10a6e5d5215944f1ec82938c9f6f0a49ae3233cab50dc5c40f219147fd
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
   host:
-    - python >=3.6
+    - python {{ python_min }}
     - pip
+    - setuptools
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - tornado >=6.0.2
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - tornado_proxy_handlers
 
